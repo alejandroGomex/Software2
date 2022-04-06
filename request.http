@@ -3,9 +3,9 @@ POST http://localhost:5000/api/v1/people/person HTTP/1.1
 Content-Type: application/json
 
 {
-  "name":"alejandro",
+  "name":"aaa",
   "lastname":"Gomez",
-  "dni":"1029432",
+  "dni":"123456",
   "address":[{
     "city":"Manizales",
     "code_zip":170002,
@@ -15,9 +15,9 @@ Content-Type: application/json
 ###
 GET http://localhost:5000/api/v1/people HTTP/1.1
 ###
-GET http://localhost:5000/api/v1/people/ HTTP/1.1
+GET http://localhost:5000/api/v1/people/623b2716ec5edf49c959ec4c HTTP/1.1
 ###
-PUT http://localhost:5000/api/v1/people/ HTTP/1.1
+PUT http://localhost:5000/api/v1/people/623b2716ec5edf49c959ec4c HTTP/1.1
 Content-Type: application/json
 
 {
@@ -35,12 +35,23 @@ POST http://localhost:5000/api/v1/superheroes_v2/superhero HTTP/1.1
 Content-Type: application/json
 
 {
-  "superhero":"Batman",
-  "realname":"Bruce wayne",
-  "superPower":"be rich"
+    "superhero":"SuperSherk ",
+  "realname":"Sherk",
+  "superpower":"Be fat"
+
 }
 ###
 GET http://localhost:5000/api/v1/superheroes_v2 HTTP/1.1
 
 ###
-GET http://localhost:5000/api/v1/superheroes_v2/623b257c36a4ba8a3d33c969 HTTP/1.1
+GET http://localhost:5000/api/v1/superheroes_v2/6244615f3248929d2979d473 HTTP/1.1
+
+###
+PUT http://localhost:5000/api/v1/superheroes_v2/6244615f3248929d2979d473 HTTP/1.1
+Content-Type: application/json
+
+{
+  "realname":"a a"
+}
+###
+DELETE http://localhost:5000/api/v1/superheroes_v2/623bad7d4832b5d68567761b HTTP/1.1

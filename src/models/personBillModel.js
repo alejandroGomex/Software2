@@ -8,6 +8,10 @@ const personBillSchema= mongoose.Schema({
     type:String,
     require:true
   },
+  dni:{
+    type:String,
+    require:true
+  },
   address:{
     type:Object,
     require:true,
